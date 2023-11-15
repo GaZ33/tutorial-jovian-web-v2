@@ -12,10 +12,10 @@ jobs = [
 
 
 @app.route("/")
-def hello_world():
+def hello_jovian():
   return render_template("home.html", jobs=jobs)
 
-@app.rout("/api/jobs")
+@app.route("/api/jobs")
 def list_jobs():
   return jsonify(jobs)
 
