@@ -1,45 +1,13 @@
-
-* {
-    /* padding: 0px;
-    margin: 0px; */
-    box-sizing: border-box;
-}
-
-h1{
-    font-size: 40px;
-    font-weight: normal;
-    font-family: 'Roboto', sans-serif;
-    color: rgb(100, 100, 100);
-    text-align: center;
-}
-
-.banner{
-    width: 100%;
-    height: 360px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    object-fit: cover; /* this attribute fit the image on the container where this image is*/
-}
-
-h2{
-    
-    font-size: 32px;
-    color: rgb(100, 100, 100);
-    text-align: center;
-    font-weight: normal;
-}
-
-.bodytext{
-    font-family: 'Roboto', sans-serif;
-    color: rgb(80, 80, 80);
-}
-
 .container{
-    max-width: 70%;
-    margin: 0px auto 0px;
+    width: 80%;
 }
 
-.button_contact{
-    text-align: center;
+.img-fluid{
+    height: 360px;
+    width: 100%;
+    object-fit: cover;
+}
+h4{
+    color: rgb(120, 120, 120);
+    margin-bottom: 4px;
 }
