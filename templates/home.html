@@ -14,15 +14,36 @@
 </head>
 
 <body>
+    {% include 'nav.html' %}
+    
+    <img class="img-fluid" src="../static/banner.jpg" alt="banner of Jovian Carrers">
     <div class="container">
         <h1 class="text-center mt-2 mb-4">Jovian Carrers</h1>
-        <img class="img-fluid" src="../static/banner.jpg" alt="banner of Jovian Carrers">
         <h2 class="text-center mt-2 mb-4">About jovian</h2>
-        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente voluptatibus enim fugit
-            dolore aut nihil
-            sunt,
-            nulla impedit minus mollitia architecto quo quisquam sint odio explicabo dignissimos necessitatibus nesciunt
-            tenetur!</p>
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente voluptatibus enim fugit
+                    dolore aut nihil
+                    sunt,
+                    nulla impedit minus mollitia architecto quo quisquam sint odio explicabo dignissimos necessitatibus nesciunt
+                    tenetur!
+                    dolore aut nihil
+                    sunt,
+                    nulla impedit minus mollitia architecto quo quisquam sint odio explicabo dignissimos necessitatibus nesciunt
+                    tenetur!
+                    tenetur!
+                    dolore aut nihil
+                    sunt,
+                    nulla impedit minus mollitia architecto quo quisquam sint odio explicabo dignissimos necessitatibus nesciunt
+                    tenetur!</p>
+            </div>
+            <div class="col-md-6 d-none d-md-block">
+                <p><img src="../static/work.jpg" alt="People working" height="320px"></p>
+            </div>
+
+        </div>
+
+        
         <h2 class="text-center mt-2 mb-4">Open positions</h2>
         <div class="mt-2">
             {% for job in jobs %}
@@ -31,11 +52,10 @@
         </div>
         <div class="text-center">
             <button class="btn btn-primary btn-lg">Contact Us</button>
-            <p class="mt-4">Copyright 2022, Jovian</p>
         </div>
 
     </div>
-
+    {% include 'footer.html' %}
 </body>
 
 </html>
